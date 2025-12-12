@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
 
+    // Replace зайвих символів
+    login = login.replace(/[^a-zA-Z0-9_]/g, '');
+    document.getElementById('login').value = login;
+    console.log('Login після replace:', login);
+
     const loginPattern = /^[a-zA-Z0-9_]{3,}$/;
     if (!loginPattern.test(login)) {
       alert('Невірний логін!');

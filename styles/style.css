@@ -1,0 +1,365 @@
+body {
+    background: linear-gradient(to right, #000 60%, #111);
+    color: white;
+    display: flex;
+    background: url('https://sweet-tv-static.sweet.tv/web/v2/home/UA-header_img-1729162981.png') no-repeat center center/cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #182936;
+    width: 100%;
+}
+.Log_in{
+  color: #fff;
+}
+.interface{
+    background-color: black;
+    width: 100%;
+    border-style: solid ;
+    border-width: 2px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+.device{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    grid-row: 7 / 8;
+    grid-column: 1 / 3;
+    padding: 24px 15px;
+    max-width: 1194px;
+    width: 100%;
+    background-color: #000;
+}
+.main-page-ua__header-devices-content {
+    display: flex;
+    align-items: center;
+}
+.main-page-ua__header-devices-texts-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    color: #fff;
+    margin: 0;
+}
+
+
+.main-page-ua__header-devices-texts-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 133%;
+    color: #fff;
+    opacity: .4;
+    margin: 0;
+}
+
+.header-seo {
+    text-align: center;
+    background-color: #153749;
+    position: fixed;
+    
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+}
+.logo{
+    position: absolute;
+     right: 1050px;
+    width: 100px;
+}
+.routes{
+
+    font-size: 20px;
+ .free{
+    background-color: #20bec6;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+ }
+ .uk{
+    position: absolute;
+    right:50px;
+    width: 200px;
+    height: 10px;
+
+ }
+ .search{
+    position: absolute;
+    right: 27px;
+    width: 200px;
+    height: 10px;}
+ 
+ .Log_in{
+    position: absolute;
+    right: -10px;
+    width: 200px;
+    height: 10px;
+}
+}
+ 
+.content {
+    padding-left: 60px;
+    max-width: 50%;
+    margin: 150px 50px;
+  }
+
+
+  .content h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+
+  .content button {
+    background-color: #00c4cc;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+  .tv-screen {
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+.m2__what-item{ 
+    outline-style:double;
+    margin-bottom: 20px;
+    max-width: 520px;
+      
+}
+.what-img{
+    position: absolute;
+    right: 150px;
+    top: 925px;
+    
+    }
+.what-item{
+    position: absolute;
+    right: 300px;
+    top: 1425px;
+}
+.m2__studios{
+    position: absolute;
+    right: 355px;
+    top: 1710px;
+}
+.m3__what-item {
+    text-align: center;
+}
+.gray{
+    color: rgb(156, 155, 155);
+}
+
+.m2__what-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  padding: 40px 0;
+}    
+.m2__what-tablet{
+    max-width: 582px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.m2__what-tablet video {
+    width: 100%;
+    height: auto;
+    padding: 6% 5.9%;
+    background-size: cover;
+     border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.parrot{
+position: absolute;
+left: 300px;
+max-width: 200px;
+z-index: 1;
+}
+.tv-screen img {
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+.img_sport{
+    position: absolute;
+    right: 150px;
+    top: 2450px; 
+}
+h4,h1{
+    text-align: center;
+}
+.chat{
+    position: sticky;
+    top: 0;
+    margin-left: 1300px;
+}
+
+.sports-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+
+.sports-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sports-text h3 {
+  font-size: 22px;
+  margin: 15px 0 5px;
+}
+
+.rozetka {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gift-promo {
+    margin-top:100px;
+    display: flex;
+    padding: 60px 80px;
+    height: 450px 
+}
+.m2__subsrc_lozad h2{
+   font-size: 55px; 
+}
+.free_7 p {
+    margin-top: 50px;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+.m2__right-people {
+    position: absolute;
+    top: 4180px;
+    left: 50%;
+    transform: translateX(65%);
+}
+.m2__count p{
+    position: absolute;
+    top: 4475px;
+    left: 50%;
+}
+.m2_logo{
+    position: absolute;
+    top: 4250px;
+    left: 50%;
+}
+.m2__sound-img{
+    text-align: right;
+}
+.h1_title{
+    font-size: 45px; 
+    position: absolute;
+    top: 4750px;
+    left: 50px;
+}
+.m2__family-block{
+    font-size: 25px;
+    color: #000;
+    background-image: url("https://sweet.tv/images/v2/index_2022/bg2-family.webp");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+} 
+.gray_1{
+    color: rgb(156, 155, 155);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.m2__family-apps {
+    margin-left: 150px;
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.Photo{
+    max-width: 700px;
+} 
+.main-page {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Стилі для футера */
+.footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Колонки футера */
+.column {
+  margin: 10px;
+}
+
+.column a {
+  color: #b0bec5;
+  display: block;
+  margin: 5px 0;
+}
+
+/* Ефект при наведенні */
+.column a:hover {
+  color: white;
+} 
+
+/* На экранах шириной 992 пикселя или меньше цвет фона синий */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgb(9, 9, 39);
+    color: white;
+  }
+}
+/* На экранах шириной 600 пикселей или меньше цвет фона оливковый */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(63, 82, 255);
+    color: white;
+  }
+}

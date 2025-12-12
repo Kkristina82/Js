@@ -14,3 +14,26 @@ console.log("background-color <body>: ", bodyBg);
 const h1 = document.querySelector('h1');
 const h1FontSize = window.getComputedStyle(h1).fontSize;
 console.log("font-size <h1>: ", h1FontSize);
+
+// Беремо всі елементи на сторінці
+const allElements = document.querySelectorAll('*');
+
+allElements.forEach(element => {
+
+    let previousColor = ""; // тут зберігаємо старий фон
+
+    // Подія наведення миші
+    element.addEventListener('mouseenter', () => {
+        // Зберігаємо попередній background
+        previousColor = window.getComputedStyle(element).backgroundColor;
+
+        // Змінюємо фон на червоний
+        element.style.backgroundColor = 'red';
+    });
+
+    // Подія, коли миша йде з елемента
+    element.addEventListener('mouseleave', () => {
+        // Повертаємо старий фон
+        element.style.backgroundColor = previousColor;
+    });
+});

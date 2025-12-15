@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Space starfall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #0a0a2a, #000);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .wrapper {
+            background: rgba(255,255,255,0.08);
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        canvas {
+            background: black;
+            border: 3px solid #4fc3f7;
+            border-radius: 10px;
+        }
+
+        .hint {
+            margin-top: 8px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 16px;
+        }
+
+        .overlay.show {
+            display: flex;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background: #4fc3f7;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h1>🚀 Space starfall</h1>
+
+    <div class="stats">
+        <div>Очки: <span id="score">0</span></div>
+        <div>Життя: <span id="lives">3</span></div>
+    </div>
+
+    <canvas id="canvas" width="400" height="600"></canvas>
+
+    <div class="hint">Керування: ← →</div>
+
+    <div class="overlay" id="gameOver">
+        <h2>Гру завершено</h2>
+        <p>Рахунок: <span id="finalScore">0</span></p>
+        <button onclick="restart()">Почати знову</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
